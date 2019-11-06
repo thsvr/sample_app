@@ -246,7 +246,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap (= 1.4.4)
-  bootstrap-sass (= 3.4.1)
+  bootstrap-sass
   byebug (= 11.0.1)
   capybara (= 3.28.0)
   guard (= 2.15.0)
