@@ -9,13 +9,16 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(params[:user])    # Not the final implementation!
-    if @user.save
+    @user = User.new(params[:user])   
+      if @user.save
       # Handle a successful save.
     else
       render 'new'
     end
 
+
+   private
+    
     def user_params
       params.require(:user).permit(:name, :email, :password,
                                    :password_confirmation)
